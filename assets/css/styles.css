@@ -3,6 +3,8 @@
 /* Fonts: font-family: 'Fredoka One', cursive; font-family: 'Roboto', sans-serif; */
 /* Weights: LOGO - 400, BODY - 400, 900 */
 
+
+/* GENERAL STYLING */
 body{
   background: #2B2E4A;
   font-family: 'Roboto', sans-serif;
@@ -51,14 +53,13 @@ button:hover {
 ul {
   margin: auto;
 }
-#user-links li {
+/*#user-links*/ li {
   background: #53354A;
   border: 1px solid #53354A;
   border-radius: 3px;
   width: 800px;
   margin: auto;
   margin-bottom: 10px;
-  /*margin: 10px;*/
   padding: 5px 20px 5px 20px;
   text-align: left;
 }
@@ -161,4 +162,103 @@ li button {
   letter-spacing: 4px;
   font-size: 20px;
   padding-bottom: 50px;
+}
+
+
+/* Colors: #d8e9f0 #2B2E4A #E84545 #903749 #53354A */
+
+/* FOR RESPONSIVENESS */
+@media screen and (min-width:250px) and (max-width: 550px) {
+/* GENERAL STYLING */
+  body{
+    background: #903749;
+    font-family: 'Roboto', sans-serif;
+    color: #d8e9f0;
+  }
+  .tabs a {
+    background: #d8e9f0;
+    border: 1px solid #d8e9f0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    letter-spacing: 3px;
+    margin: 20px;
+    padding: 10px 20px 3px 20px;
+    color: #903749;
+    font-weight: 900;
+  }
+  button {
+    background: #903749;
+    border: 1px solid #903749;
+  }
+  li {
+    background: #2B2E4A;
+    border: 1px solid #2B2E4A;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    padding: 10px 25px 10px 25px;
+  }
+  li button {
+    margin: 5px 10px 5px 10px;
+    color: #53354A;
+  }
+  /* HEADER */
+  .nav-bar {
+    border-bottom: 1px solid #2B2E4A;
+    background: #454553;
+  }
+  .username {
+    min-height: 20px;
+    border-radius: 4px;
+  }
+  #username-submit {
+    color: #d8e9f0;
+  }
+/* MY LIST SECTION */
+  .user-content {
+    padding-top: 60px;
+  }
+  .user-logo {
+    font-size: 60px;
+    color: #2B2E4A;
+  }
+  .form-text-area {
+    width: 350px;
+    min-height: 20px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+    cursor: copy;
+  }
+  .add-bookmark {
+    /*margin-bottom: 30px;*/
+    background: #d8e9f0;
+    color: #903749;
+  }
+  .share-plock {
+    color: #2B2E4A;
+  }
+/* RECOMMENDED SECTION */
+  .reco-content {
+    padding-top: 60px;
+  }
+  .reco-logo {
+    font-size: 60px;
+    color: #2B2E4A;
+  }
+  .reco-header {
+    color: #2B2E4A;
+    letter-spacing: 3px;
+    font-size: 18px;
+  }
+  .add-plock {
+    color: #2B2E4A;
+  }
 }
