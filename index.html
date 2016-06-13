@@ -3,68 +3,71 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <meta charset="utf-8">
     <title>Plock</title>
 
   </head>
   <body>
-  <div id="wrapper">
-    <div class="user-login">
-    <form id="navbar">
-      <input class="username" name="un" type="text" placeholder="username">
-      <button id="username-submit" type="submit">Login</button>
-      <input id="travis" type="button" value="TRAVIS">
-    </form>
-  </div>
-    <section class="user-content">
-      <div class="user-logo">Plockemon!</div>
+    <div id="wrapper">
+      <header class="nav-bar user-login">
+        <form id="navbar">
+          <input class="username" name="un" type="text" placeholder="username">
+          <button id="username-submit" type="submit">Login</button>
+          <!-- <input id="travis" type="button" value="TRAVIS"> -->
+        </form>
+      </header>
 
-      <div class="tabs"><a href="#" class="my-list">My List</a><a href="#" class="my-reco">Recommended</a></div>
 
-      <!-- This bit of code courtesy of the awesome people behind http://guides.railsgirls.com/sinatra and Maria from the Ruby class for pointing me in the right direction.-->
-      <form id="submit-form" action='/' method='get'>
-        <input class="form-text-area" name="url" placeholder="enter url to save">
-        <input class="form-text-area" name="title" placeholder="enter title">
-        <input class="form-text-area" name="desc" placeholder="enter a description">
-      </form>
-        <button class="add-bookmark" type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  LINK EM!</button>
+      <section class="user-content">
+        <div class="user-logo"><!--Plock-->Plockemon!</div>
 
-      <ul id="user-links">
-        <li class="listTitle"></li>
-        <li class="listUrl"></li>
-        <li class="listDesc"></li>
-        <li class="listRb"></li>
-            <button type="submit"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>  Share Plock</button></li>
+        <div class="tabs"><a href="#" class="my-list">My List</a><a href="#" class="my-reco">Recommended</a></div>
 
-            <li><!-- LIST ITEMS WILL ADD HERE -->Test 2
-                <button type="submit"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>  Share Plock</button></li>
+        <!-- This bit of code courtesy of the awesome people behind http://guides.railsgirls.com/sinatra and Maria from the Ruby class for pointing me in the right direction.-->
+        <form id="submit-form" action='/' method='get'>
+          <input class="form-text-area url" name="url" placeholder="enter url to save">
+          <input class="form-text-area title" name="title" placeholder="enter title">
+          <input class="form-text-area desc" name="desc" placeholder="enter a description">
+        </form>
+          <button class="add-bookmark" type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  <!--Add bookmark-->Link 'em!</button>
 
-            <!-- REMOVE ICON <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>-->
-      </ul>
-    </section>
+        <ul id="user-links">
+          <!-- <li class="listTitle"></li> -->
+          <!-- <li class="listUrl"></li> -->
+          <!-- <li class="listDesc"></li> -->
+          <!-- <li class="listRb"></li> -->
+          <!-- <button class="share-plock" type="submit"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>  Share Plock</button></li> -->
 
-    <section class="reco-content">
-      <div class="reco-logo">Plockemon!</div>
+          <li><!-- LIST ITEMS WILL ADD HERE -->Test
+              <button class="share-plock" type="submit"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>  Share Plock</button></li>
 
-      <div class="reco-header">Recommended</div>
+              <!-- REMOVE ICON <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>-->
+        </ul>
+      </section>
 
-      <div class="tabs"><a href="#" class="my-list">My List</a><a href="#" class="my-reco">Recommended</a></div>
 
-      <ul class="reco-links">
-        <li><!-- LIST ITEMS WILL ADD HERE -->Test-Reco
-            <button type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  Add Plock</button></li>
+      <section class="reco-content">
+        <div class="reco-logo"><!--Plock-->Plockemon!</div>
 
-            <li><!-- LIST ITEMS WILL ADD HERE -->Test-Reco 2
-                <button type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  Add Plock</button></li>
-      </ul>
-    </section>
+        <div class="reco-header">Recommended</div>
 
-  </div>
-<script src="assets/js/plock.js" type="text/javascript"></script>
-</body>
+        <div class="tabs"><a href="#" class="my-list">My List</a><a href="#" class="my-reco">Recommended</a></div>
+
+        <ul class="reco-links">
+          <li><!-- LIST ITEMS WILL ADD HERE -->Test-Reco
+             <button class="add-plock" type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  Add Plock</button></li>
+
+             <li><!-- LIST ITEMS WILL ADD HERE -->Test-Reco 2
+                 <button class="add-plock" type="submit"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  Add Plock</button></li>
+        </ul>
+      </section>
+
+
+    </div>
+  <script src="assets/js/plock.js" type="text/javascript"></script>
+  </body>
 </html>
